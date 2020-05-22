@@ -1,12 +1,12 @@
 {
   "name": "carlonicora/minimalism-module-cli",
   "description": "Cli module for minimalism",
-  "version": "1.0.1",
+  "version": "2.0.0-beta1",
   "homepage": "https://carlonicora.com",
   "time": "2020-04-05",
   "license": "MIT",
   "type": "library",
-  "minimum-stability": "stable",
+  "minimum-stability": "beta",
   "authors": [
     {
       "name": "Carlo Nicora",
@@ -17,12 +17,20 @@
   ],
   "autoload": {
     "psr-4": {
-      "carlonicora\\minimalism\\modules\\cli\\":"src/"
+      "CarloNicora\\Minimalism\\Modules\\Cli\\":"src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "CarloNicora\\Minimalism\\Modules\\Cli\\Tests\\":"tests/"
     }
   },
   "require": {
     "php": "^7.4",
     "ext-json": "*",
-    "carlonicora/minimalism": "~10.5"
+    "carlonicora/minimalism": "~11.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9"
   }
 }

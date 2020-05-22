@@ -6,7 +6,7 @@ use carlonicora\minimalism\core\modules\abstracts\controllers\abstractController
 use Exception;
 use Throwable;
 
-class controller extends abstractController {
+class CController extends abstractController {
     /**
      * @return string
      */
